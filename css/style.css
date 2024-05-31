@@ -145,8 +145,7 @@ header {
 
 header img {
     margin-top: 40px;
-    width: 70px;
-    height: 5%
+    width: 65px;
 }
 
 nav a {
@@ -162,7 +161,7 @@ nav a:hover {
     border-top: 2px solid blue;
 }
 
-.centre-nature {
+.section-subtitle {
     margin-top: 10px;
     font-size: 16px;
 }
@@ -256,8 +255,7 @@ nav a:hover {
 .text-buttons {
     font-size: 16px;
     font-weight: bold;
-    align-items: center;
-    padding-right: 15px;
+    margin-right: 20px;
 }
 
 .list-filters-buttons :hover {
@@ -376,10 +374,6 @@ li {
         padding: 0;
     }
 
-    .filters-buttons {
-        margin-left: 0;
-    }
-
     .hebergements {
         width: 100%;
     }
@@ -468,7 +462,9 @@ li {
         padding: 20px;
         flex: 1;
         text-align: center;
-        margin: 0
+        margin: 0;
+        border-top: none;
+        border-bottom: 2px solid transparent;
     }
 
     nav a:hover {
@@ -481,8 +477,15 @@ li {
         padding: 0 20px;
     }
 
+    .section-title {
+        font-size: 23px;
+    }
+
+    .centre-nature {
+        font-size: 17px;
+    }
     .searchMenu {
-        width: 350px;
+        width: 100%;
         border-top: solid 1px #F2F2F2;
         border-bottom: solid 1px #F2F2F2;
         padding: 0;
@@ -517,18 +520,19 @@ li {
     }
 
     .list-filters-buttons {
-        flex: none;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 5px;
         padding-bottom: 10px;
-        width: 350px;
     }
 
     .filters-buttons i {
-        width: 40px;
+        width: 25%;
     }
 
+    .text-buttons {
+        margin-right: 0px;
+    }
 
     /**Hebergements et Populaires**/
 
