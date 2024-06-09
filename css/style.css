@@ -43,6 +43,11 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.card:hover {
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
 .card img {
     object-fit: cover;
 }
@@ -232,12 +237,12 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     padding-left: 10px;
+    gap: 15px;
 }
 
 .filters-buttons {
     display: flex;
     align-items: center;
-    margin: 5px;
     height: 50px;
     background: none;
     border: 2px solid #d7d4d4;
@@ -317,6 +322,11 @@ width: 30%;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+}
+
+.card-3:hover {
+    transition: transform 0.5s;
+    transform: scale(1.05);
 }
 
 .activites-cards img {
@@ -445,7 +455,6 @@ li {
     header {
         flex-direction: column;
         align-items: center;
-        border-bottom: 2px solid #e9e7e7;
         padding-bottom: 0;
         margin-bottom: 30px;
     }
@@ -459,12 +468,13 @@ li {
     }
 
     nav a {
-        padding: 20px;
+        padding-bottom: 20px;
         flex: 1;
         text-align: center;
         margin: 0;
         border-top: none;
-        border-bottom: 2px solid transparent;
+        border-bottom: 2px solid #e9e7e7;
+
     }
 
     nav a:hover {
@@ -493,7 +503,7 @@ li {
     }
 
     .location {
-        width: 20%;
+        width: 70px;
     }
 
     .searchTerm {
@@ -508,7 +518,7 @@ li {
 
     #icon-glass {
         display: block;
-        width: 20%;
+        width: 70px;
         border: none;
         background: blue;
         border-radius: 15px;
@@ -522,12 +532,12 @@ li {
     .list-filters-buttons {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 15px 5px;
+        gap: 20px 15px;
         padding-bottom: 10px;
     }
 
     .filters-buttons i {
-        width: 25%;
+        width: 20%;
     }
 
     .text-buttons {
@@ -611,4 +621,5 @@ li {
     }
 
 }
+
 
