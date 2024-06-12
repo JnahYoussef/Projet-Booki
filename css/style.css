@@ -139,7 +139,7 @@ a {
 
 
 
-                                        /*Header*/
+                                        /**Header**/
 
 header {
     display: flex;
@@ -171,13 +171,21 @@ nav a:hover {
     font-size: 16px;
 }
 
-                                        /*formulaire*/
+                                        /**Main**/
+
+
+                        /*formulaire*/
+
+.get-accommodation {
+ font-size: 24px;
+ margin: 0;
+}
 
 .searchMenu {
     width: 100%;
     position: relative;
     display: flex;
-    padding: 30px 0 30px 0;
+    padding: 20px 0 30px 0;
 }
 
 .location {
@@ -193,7 +201,18 @@ nav a:hover {
     font-size: 20px;
 }
 
-.searchTerm {
+.visually-hidden {
+    border-width: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+}
+
+input {
     width: 170px;
     border: none;
     border-top: solid 1px #F2F2F2;
@@ -209,7 +228,7 @@ nav a:hover {
     color: black;
 }
 
-.search{
+.search {
     width: 130px;
     border: none;
     background: blue;
@@ -225,7 +244,7 @@ nav a:hover {
     display: none;
 }
 
-                                        /*filtres*/
+                        /*filtres*/
 
 .filters-list {
     display: flex;
@@ -233,11 +252,16 @@ nav a:hover {
     
 }
 
+.filtres {
+    font-size: 18px;
+}
+
 .list-filters-buttons {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 10px;
+    padding-left: 17px;
     gap: 15px;
+    padding-top: 2px;
 }
 
 .filters-buttons {
@@ -267,7 +291,7 @@ nav a:hover {
     background-color: rgb(162, 209, 252);
 }
 
-                                        /* Hebergements */
+                        /* Hebergements */
                                    
 .hebergements-cards {
     display: flex;
@@ -300,7 +324,7 @@ flex-grow: 1;
 width: 30%;
 }
 
-                                        /* Activités */
+                        /* Activités */
 
 .activites-cards {
     display: flex;
@@ -341,7 +365,7 @@ width: 30%;
     padding-left: 20px;
 }
 
-                                        /*Footer*/
+                        /*Footer*/
 
 footer {
     padding: 0px 25px 0px 20px;
@@ -506,7 +530,7 @@ li {
         width: 70px;
     }
 
-    .searchTerm {
+    input {
         width: 100%;
         border-top: none;
         border-bottom: none;
